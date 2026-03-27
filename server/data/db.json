@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin User",
+      "email": "admin@erp.com",
+      "password": "$2a$10$wa2H0jlaJnPbVXuJFc2pL.uz.HiErhG7sNG0xsz8JkrjKrMSavKI.",
+      "role": "admin"
+    },
+    {
+      "id": "u2",
+      "name": "Rahul Kumar",
+      "email": "rahul@erp.com",
+      "password": "$2a$10$40MzRDBIu5iX2MvlB5rOk.aNhJYxeSpCluPCPAVegOtNlp.w/k98u",
+      "role": "employee",
+      "employeeId": "e2"
+    },
+    {
+      "id": "utest01",
+      "name": "New User",
+      "email": "newuser@example.com",
+      "password": "$2a$10$muX1Dh1GqSLPJscM7ySy2uM1JDPDqTEfDWHcdNJr5KmUu1xk13CHu",
+      "role": "employee",
+      "employeeId": "etest01"
+    },
+    {
+      "id": "ucfcb51",
+      "name": "riya roy",
+      "email": "riya@erp.com",
+      "password": "$2a$10$KIFiidJyCJfhbYvgtcojbuchd8dgsm0C.193XT8yVtmueFu8EQw8S",
+      "role": "employee",
+      "employeeId": "e42b0e1"
+    }
+  ],
+  "employees": [
+    {
+      "id": "e1",
+      "name": "Admin User",
+      "email": "admin@erp.com",
+      "phone": "9000000001",
+      "department": "Management",
+      "role": "admin",
+      "salary": 80000,
+      "joiningDate": "2022-01-01",
+      "status": "Active"
+    },
+    {
+      "id": "e2",
+      "name": "Rahul Kumar",
+      "email": "rahul@erp.com",
+      "phone": "9000000002",
+      "department": "Engineering",
+      "role": "employee",
+      "salary": 45000,
+      "joiningDate": "2023-03-15",
+      "status": "Active"
+    },
+    {
+      "id": "e3",
+      "name": "Payal Singh",
+      "email": "payal@erp.com",
+      "phone": "9000000003",
+      "department": "HR",
+      "role": "employee",
+      "salary": 40000,
+      "joiningDate": "2023-06-01",
+      "status": "Active"
+    },
+    {
+      "id": "etest01",
+      "name": "New User",
+      "email": "newuser@example.com",
+      "phone": "",
+      "department": "General",
+      "role": "employee",
+      "salary": 0,
+      "joiningDate": "2026-03-27",
+      "status": "Active"
+    },
+    {
+      "id": "e42b0e1",
+      "name": "riya roy",
+      "email": "riya@erp.com",
+      "phone": "",
+      "department": "General",
+      "role": "employee",
+      "salary": 0,
+      "joiningDate": "2026-03-27",
+      "status": "Active"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "a1",
+      "employeeId": "e2",
+      "employeeName": "Rahul Kumar",
+      "date": "2026-03-24",
+      "status": "Present",
+      "checkIn": "09:05",
+      "checkOut": "18:00"
+    },
+    {
+      "id": "a2",
+      "employeeId": "e3",
+      "employeeName": "Payal Singh",
+      "date": "2026-03-24",
+      "status": "Absent",
+      "checkIn": "",
+      "checkOut": ""
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Fix login bug",
+      "description": "Resolve JWT expiry issue",
+      "assignedTo": "e2",
+      "assignedName": "Rahul Kumar",
+      "priority": "High",
+      "status": "Done",
+      "dueDate": "2026-03-28",
+      "createdAt": "2026-03-20"
+    },
+    {
+      "id": "t2",
+      "title": "Prepare HR report",
+      "description": "Monthly HR report for March 2026",
+      "assignedTo": "e3",
+      "assignedName": "Payal Singh",
+      "priority": "Medium",
+      "status": "Pending",
+      "dueDate": "2026-03-31",
+      "createdAt": "2026-03-21"
+    }
+  ],
+  "payroll": [
+    {
+      "id": "p1",
+      "employeeId": "e2",
+      "employeeName": "Rahul Kumar",
+      "month": "March 2026",
+      "basicSalary": 45000,
+      "bonus": 2000,
+      "deductions": 1500,
+      "netSalary": 45500,
+      "status": "Paid",
+      "paidOn": "2026-03-25"
+    },
+    {
+      "id": "p2",
+      "employeeId": "e3",
+      "employeeName": "Payal Singh",
+      "month": "March 2026",
+      "basicSalary": 40000,
+      "bonus": 1000,
+      "deductions": 1000,
+      "netSalary": 40000,
+      "status": "Pending",
+      "paidOn": ""
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": "ldb4cc8",
+      "employeeId": "e42b0e1",
+      "employeeName": "riya roy",
+      "leaveType": "Sick",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-11",
+      "reason": "i will dead",
+      "status": "Rejected",
+      "reviewNote": "no i will kill you",
+      "reviewedBy": "Admin User",
+      "reviewedAt": "2026-03-27",
+      "createdAt": "2026-03-27"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+.dashboard-page {
+  padding: 0.25rem 0 0.75rem;
+}
+
+.dashboard-hero {
+  padding: 1.55rem;
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(83, 74, 183, 0.18), rgba(175, 169, 236, 0.10)),
+    var(--panel-strong);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(28px);
+  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+}
+
+.dashboard-hero__copy,
+.dashboard-hero__card {
+  border-radius: 28px;
+}
+
+.dashboard-hero__copy {
+  padding: 1.2rem;
+  background: rgba(127, 119, 221, 0.1);
+  border: 1px solid var(--border);
+}
+
+body.dark .dashboard-hero__copy {
+  background: rgba(127, 119, 221, 0.06);
+}
+
+.dashboard-hero__copy h2,
+.dashboard-hero__copy p,
+.dashboard-hero__card h3,
+.dashboard-hero__card p {
+  margin: 0;
+}
+
+.dashboard-hero__copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.dashboard-hero__copy p {
+  margin-top: 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.75;
+  max-width: 42rem;
+}
+
+.dashboard-hero__actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.dashboard-hero__card {
+  padding: 1.2rem;
+  background: linear-gradient(180deg, rgba(83, 74, 183, 0.18), rgba(175, 169, 236, 0.06));
+  border: 1px solid rgba(127, 119, 221, 0.22);
+}
+
+body.dark .dashboard-hero__card {
+  background: rgba(83, 74, 183, 0.12);
+}
+
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+  }
+}
