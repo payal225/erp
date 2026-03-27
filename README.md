@@ -1,0 +1,1 @@
+Mini ERP is a full-stack employee management system built with React, Express, and MySQL. It helps teams manage employee records, attendance, leave requests, payroll, and tasks through a clean and organized interface.
